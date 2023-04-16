@@ -7,7 +7,7 @@ include {
 }
 
 inputs = {
-  tags = ["mariadb"]
+  tags = ["mariadb", "allow-db-port"]
   network = "default"
   subnetwork = "default"
 }
