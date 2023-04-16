@@ -3,7 +3,7 @@ remote_state {
     config = {
       bucket = "terraform-batch-6"
       prefix    = "${path_relative_to_include()}/terraform.tfstate"
-      credentials = ""
+      credentials = "/home/trainer/credentials/gcs.json"
     }
 }
 
@@ -11,7 +11,7 @@ inputs = {
   project = "level-surfer-383303"
   region = "asia-southeast2"
   zone = "asia-southeast2-a"
-  credentials = ""
+  credentials = "/home/trainer/credentials/credentials-staging.json"
 
   name = "${basename(get_terragrunt_dir())}"
   machine_type = "e2-micro"
